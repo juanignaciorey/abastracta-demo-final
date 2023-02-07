@@ -1,2 +1,8 @@
-package hooks;public class utilities {
+package hooks;
+
+public class utilities {
+
+    public void TakesScreenshot() {
+
+    }
 }
