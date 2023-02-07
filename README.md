@@ -9,12 +9,31 @@
 Uploading automation testing framework built using Selenium-Cucumber-TestNG-Maven-WebdriverManager. 
 
 # This framework consists of:
-[x] Java
-[x] TestNG
-[x] Maven
-[x] Selenium
-[x] Cucumber
-[x] WebdriverManager
+- [_] Java
+- [_] TestNG
+- [_] Maven
+- [_] Selenium
+- [_] Cucumber
+- [_] WebdriverManager
+
+## Perform the following steps:
+1. Abrir web de http://opencart.abstracta.us/ (Puede utilizar cualquier navegador).
+2. En la barra de búsqueda, ingresar el producto “iPhone” y buscar.
+3. Seleccionar la primera opción que aparezca.
+4. Agregar el producto al carrito de compras.
+5. Ingresar al botón del carrito de compras.
+6. Presionar "View Cart".
+7. Validar que el iPhone seleccionado se encuentre en el carrito de compras.
+8. Remover el iPhone del carrito de compras.
+9. Validar que el iPhone ya no se encuentre en el carrito de compras.
+10. Subir proyecto a un pipeline de integración continua (Jenkins, Gitlab CI, etc) y ejecutar el job.
+11. Aplicación del patrón de diseño “Page Object”.
+
+## In case of failure, the following steps will be screenshotted
+- Agregar el producto al carrito de compras.
+- Validar que el iPhone seleccionado se encuentre en el carrito de compras.
+- Validar que el iPhone ya no se encuentre en el carrito de compras.
+
 
 # About:
 This project repository is for the Abstracta platform exam.
