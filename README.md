@@ -22,7 +22,7 @@ This project repository is for the Abstracta platform exam.
 # How To Run It
 ```
 git clone https://github.com/juanignaciorey/abastracta-demo-final.git
-cd ./abastracta
+cd ./abastracta-demo-final
 mvn test
 ```
 
