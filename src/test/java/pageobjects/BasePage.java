@@ -20,19 +20,15 @@ public class BasePage {
     private static final WebDriverWait wait;
 
     static {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
         WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        driver = new ChromeDriver(chromeOptions);
-
+        driver = new ChromeDriver(options);
         java.time.Duration timeout = Duration.ofSeconds(10);
         wait = new WebDriverWait(driver, timeout);
     }
-    /*
-    @BeforeMethod
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-    }*/
 
     public static void navigateTo(String url) {
         driver.get(url);
@@ -72,7 +68,7 @@ public class BasePage {
         if (result.getStatus() == ITestResult.FAILURE) {
             try {
                 File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                String path = "ruta/del/archivo/captura_" + result.getName() + ".png";
+                String path = "../screens/screen_" + result.getName() + ".png";
                 FileHandler.copy(screenshotFile, new File(path));
                 result.setAttribute("screenshotPath", path);
             } catch (Exception e) {
