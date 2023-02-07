@@ -9,11 +9,12 @@
 Uploading automation testing framework built using Selenium-Cucumber-TestNG-Maven-WebdriverManager. 
 
 # This framework consists of:
-Java 8 or above
-TestNG
-Gradle
-Selenium
-Cucumber
+[x] Java
+[x] TestNG
+[x] Maven
+[x] Selenium
+[x] Cucumber
+[x] WebdriverManager
 
 # About:
 This project repository is for the Abstracta platform exam.
