@@ -27,9 +27,12 @@ mvn test
 ```
 
 ## Running
+![Descripción de la imagen](/images/Screenshot_1.png "running example")
+
+
 ![run test](https://ibb.co/BtnhqkJ)
 
 ## CI with Github Actions
-![exampleCI](https://ibb.co/YRmw8QB)
+![Descripción de la imagen](/images/GitActions-CI-Test.png "run test")
 ![latest report](https://github.com/juanignaciorey/abastracta-demo-final/actions/runs/4110666333/jobs/7093709463)
 
